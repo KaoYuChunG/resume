@@ -98,4 +98,6 @@ theme: hexo-theme-strata
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/KaoYuChunG/resume.git
+  branch: gh-pages
