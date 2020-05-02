@@ -1,0 +1,100 @@
+  <!-- One -->
+  <section id="one">
+    <header class="major">
+      <% if(config.subtitle) { %>
+        <h2><%- config.subtitle %></h2>
+      <%} else {%>
+        <h2>簡歷</h2>
+      <%} %>
+    </header>
+    <% if(config.subtitle) { %>
+      <ui>
+        <li>Experiência com metodologia Ágeis.</li>
+        <li>Experiência com reactjs, redux e teste unitário</li>
+        <li>Experiência com clean Architecture no Android</li>
+        <li>Experiência com angular 2 e teste unitário</li>
+        <li>Excelente autodidata e proativo para resolver os problemas</li>
+        <li>Gosto por buscar conhecimentos e desafio</li>
+      </ui>
+    <%} else {%>
+      <ui>
+        <li>畢業於FEDERAL INSTITUTE OF PARANÁ - BRAZIL，SYSTEM ANALYSIS AND DEVELOPMENT，畢業論文是關於ANDROID靜脈顯示器，並在巴西當地有研究專利。目前在巴西的TATA CONSULTANCY SERVICES，有團隊敏捷式開發經驗，使用 ANGULAR 2 開發網站，並有單元測試的概念。也參與過使用MVVM 和 DAGGER 2 的ANDROID專案。喜愛團體運作的方式成長，並探索不同領域，勇於挑戰新的事物。</li>
+      </ui>
+    <% }%>
+  </section>
+
+  <% if( theme.style == 'blog') { %>
+    <%- partial('_partial/archive', {pagination: config.archive}) %>
+  <% } else { %>
+
+    <!-- Two -->
+    <section id="two">
+      <% if(config.subtitle) { %>
+        <h2>EXPERIÊNCIA</h2>
+      <%} else {%>
+        <h2>工作經驗</h2>
+      <%} %>
+      
+      <div class="row">
+        <% page.posts.forEach(function(item, index){ %>
+            <%- partial('_partial/article-index', {item: item, index: index}) %>
+        <% }); %>
+      </div>
+
+  <% } %>
+    <%- partial('_partial/pagination') %>
+  </section>
+  <section id="three">
+    <% if(config.subtitle) { %>
+      <h2>HABILIDADES</h2>
+      <h3>Desenvolvimento / frameworks: </h3>
+      <ul>
+        <li>Android ( Kotlin, MVVM, Dagger2, databinding, Retrofit), </li>
+        <li>Angular 2, teste unitário, </li>
+        <li>Reactjs, Redux, teste unitário, </li>
+        <li>Spring Boot, </li>
+        <li>MySQL, PostgreSQL, </li>
+        <li>Git</li>
+      </ul>
+    <%} else {%>
+      <h2>專業技能</h2>
+      <h3>Development: </h3>
+      <ul>
+        <li>Android ( Kotlin, MVVM, Dagger2, databinding, Retrofit), </li>
+        <li>Angular 2, teste unitário, </li>
+        <li>Reactjs, Redux, teste unitário, </li>
+        <li>Spring Boot, </li>
+        <li>MySQL, PostgreSQL, </li>
+        <li>Git</li>
+      </ul>
+    <%} %>
+  </section>
+
+  <section id="four">
+    <% if(config.subtitle) { %>
+      <h2>FORMAÇÃO ACADÊMICA </h2>
+      <h4>
+        Graduação em Análise e Desenvolvimento de sistema – concluído em 2017<br>
+        INSTITUTO FEDERAL DO PARANÁ – Campus Londrina 
+      </h4>
+      <h4>Desenvolvedor de Aplicativos para Mídias Digitai – concluído em 2017<br>SENAI </h4>
+      <h4>Técnico em informática para internet – concluído em 2016 <br> SENAC  </h4>
+     
+    <%} else {%>
+      <h2>學歷</h2>
+      <h4> FEDERAL INSTITUTE OF PARANÁ, BRAZIL<br>SYSTEM ANALYSIS AND DEVELOPMENT – 2015/01 - 2017/12</h4>
+    <%} %>
+  </section>
+  <section id="five">
+    <h2>CERTIFICAÇÕES </h2>
+    <h4>Introdução à Gestão de Projetos–SENAI </h4>
+    <h4>Desenvolvimento e metodologia Ágeis – SENAI  </h4>
+    <h4>Auto CAD – SENAI  </h4>
+  </section>
+  <section id="six">
+    <h2>IDIOMA</h2>
+    <h4>Inglês – intermediário<br> Português - fluente<br> Chinês – nativo </h4>
+  </section>
+  <section id="Seven">
+   
+  </section>
