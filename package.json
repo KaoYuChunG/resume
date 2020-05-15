@@ -27,7 +27,6 @@
     "hexo-renderer-sass": "^0.4.0",
     "hexo-renderer-scss": "^1.2.0",
     "hexo-renderer-stylus": "^1.1.0",
-    "hexo-server": "^1.0.0",
-    "hexo-theme-sb": "^1.0.17"
+    "hexo-server": "^1.0.0"
   }
 }
